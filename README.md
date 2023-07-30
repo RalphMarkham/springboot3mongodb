@@ -1,0 +1,2 @@
+## How To Mock Mongo DB  
+### Note 2 Self: look into finding a REPLACEMENT for IntelliJ, nicest thing about vi and emacs is the key bindings NEVER change.  Maybe I am getting too old for IT, or maybe there are just sooo many other things to keep on top of, either way my next IDE needs to be backwardly compatible with everything that came before.
