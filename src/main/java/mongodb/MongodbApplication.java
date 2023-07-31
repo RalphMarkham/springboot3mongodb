@@ -6,6 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
+import java.util.Map;
+
 @SpringBootApplication
 public class MongodbApplication implements CommandLineRunner {
 
@@ -44,6 +46,11 @@ public class MongodbApplication implements CommandLineRunner {
 			System.out.println(customer);
 		}
 
+		System.out.println("Customers found with findByKeyValue('references',Map.of('keyName', 'keyValue')):");
+		System.out.println("--------------------------------");
+		for (Customer customer : svc.findByKeyValue("references", Map.of("keyName", "keyValue"))) {
+			System.out.println(customer);
+		}
 	}
 
 }

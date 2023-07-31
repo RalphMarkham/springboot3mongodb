@@ -13,7 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@MockBeans({ @MockBean(MongoTemplate.class), @MockBean(GridFsTemplate.class) })
+@MockBean(MongoTemplate.class)
+@MockBean(GridFsTemplate.class)
 class MongodbApplicationTests {
 
 	@Autowired
